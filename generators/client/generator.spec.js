@@ -22,5 +22,11 @@ describe('SubGenerator client of yellowbricks-client-relativepathresource JHipst
     it('should succeed', () => {
       expect(result.getStateSnapshot()).toMatchSnapshot();
     });
+
+    it('should use relative logo path in loading.css', () => {
+      const content = result._readFile('src/main/webapp/content/css/loading.css');
+      expect(content).toContain("url('../images/logo-jhipster.png')");
+      expect(content).not.toContain("url('/content/images/logo-jhipster.png')");
+    });
   });
 });
