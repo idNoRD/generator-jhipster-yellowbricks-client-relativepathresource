@@ -2,6 +2,8 @@
 
 Assume the context-path is "/jh"
 
+Template: https://github.com/jhipster/generator-jhipster/blob/main/generators/client/templates/src/main/webapp/content/css/loading.css.ejs
+
 For `src/main/webapp/content/css/loading.css`
 ```diff
 -  background-image: url('/content/images/logo-jhipster.png');
