@@ -1,6 +1,6 @@
 # generator-jhipster-yellowbricks-client-relativepathresource
 
-A [JHipster](https://www.jhipster.tech/) blueprint that makes the loading screen logo path relative in `loading.css`.
+One of [![Yellow Bricks Badge](https://img.shields.io/badge/YELLOWBRICKS--yellow?style=for-the-badge&labelColor=black)](https://github.com/idNoRD/generator-jhipster-yellowbricks) - a [JHipster](https://www.jhipster.tech/) blueprint that makes the loading screen logo path relative in `loading.css`.
 
 [![NPM version][npm-image]][npm-url]
 [![Generator][github-generator-image]][github-generator-url]
