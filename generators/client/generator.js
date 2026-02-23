@@ -88,15 +88,15 @@ export default class extends BaseApplicationGenerator {
         this.editFile('src/main/webapp/content/css/loading.css', { ignoreNonExisting: true }, content => {
           if (!content.includes("url('/content/images/logo-jhipster.png')")) {
             if (content.includes("url('../images/logo-jhipster.png')")) {
-              this.log.info('[relative-path blueprint] loading.css: logo path already relative, skipping');
+              this.log.info('[yellowbricks-client-relativepathresource] loading.css: logo path already relative, skipping');
             } else {
-              this.log.warn('[relative-path blueprint] loading.css: expected logo URL not found — manual intervention needed');
+              this.log.warn('[yellowbricks-client-relativepathresource] loading.css: expected logo URL not found — manual intervention needed');
             }
             return content;
           }
 
           const updated = content.replace("url('/content/images/logo-jhipster.png')", "url('../images/logo-jhipster.png')");
-          this.log.info('[relative-path blueprint] loading.css: logo path made relative successfully');
+          this.log.info('[yellowbricks-client-relativepathresource] loading.css: logo path made relative successfully');
           return updated;
         });
       },
