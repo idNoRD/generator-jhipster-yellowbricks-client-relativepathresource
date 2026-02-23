@@ -90,7 +90,9 @@ export default class extends BaseApplicationGenerator {
             if (content.includes("url('../images/logo-jhipster.png')")) {
               this.log.info('[yellowbricks-client-relativepathresource] loading.css: logo path already relative, skipping');
             } else {
-              this.log.warn('[yellowbricks-client-relativepathresource] loading.css: expected logo URL not found — manual intervention needed');
+              this.log.warn(
+                '[yellowbricks-client-relativepathresource] loading.css: expected logo URL not found — manual intervention needed',
+              );
             }
             return content;
           }
