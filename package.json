@@ -1,6 +1,6 @@
 {
   "name": "generator-jhipster-yellowbricks-client-relativepathresource",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "JHipster blueprint to make the loading screen logo path relative in loading.css (removes leading slash)",
   "keywords": [
     "yeoman-generator",
